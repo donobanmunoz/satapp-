@@ -10,9 +10,10 @@ var app = express();
 
 
 app.use(bodyParser.json());
+
 app.use(express.urlencoded({extended: false}));
 //this method from express connects the front end to the server
-app.use(express.static(path.join(__dirname, '../public')))
+app.use(express.static(path.join(__dirname, '../public/src')))
 //connect to the file that we want to combine
 //get request to main page to server
 app.get('/', function(req, res) {
