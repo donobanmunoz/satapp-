@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
+import First from './components/first.jsx'
 
 //how to create a component have to extend it to other files
 //react dom to render to the dom
@@ -11,7 +12,11 @@ class App extends React.Component{
 
   render() {
     return(
-      <h1> Sury</h1>
+      <div>
+       <h1> Sury</h1>
+       <First>
+       </First>
+      </div>
     )
   }
 }
